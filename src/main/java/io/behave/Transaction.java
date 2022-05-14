@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 /**
- * Represents a synchronized set of operations.
+ * Represents a synchronized set of statements.
  * <p>
  * Operations between transactions cannot be reordered.
  */
@@ -17,10 +17,10 @@ public interface Transaction {
     @NotNull Condition condition();
 
     /**
-     * Operations to execute.
-     * Statements can be reordered/optimized as long as behavior is conserved.
+     * Statements to execute.
+     * They can be reordered/optimized as long as behavior is conserved.
      */
-    @NotNull List<@NotNull Operation> operations();
+    @NotNull List<@NotNull Statement> statements();
 
     interface Condition {
     }
