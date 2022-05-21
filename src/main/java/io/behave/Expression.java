@@ -9,7 +9,7 @@ public sealed interface Expression
     }
 
     non-sealed interface TagValue extends Expression {
-        @NotNull Entity entity();
+        @NotNull BehaveObject object();
 
         @NotNull Tag tag();
     }

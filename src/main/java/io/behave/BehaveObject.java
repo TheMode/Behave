@@ -1,5 +1,5 @@
 package io.behave;
 
-public interface Entity {
+public interface BehaveObject {
     long id();
 }

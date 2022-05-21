@@ -17,7 +17,7 @@ sealed interface Statement
     }
 
     non-sealed interface ChangeTag extends Statement {
-        @NotNull Entity entity();
+        @NotNull BehaveObject object();
 
         @NotNull Tag tag();
 
